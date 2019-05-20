@@ -1,1 +1,0 @@
-Prepare environment `https://raw.githubusercontent.com/mwpro/katacoda-scenarios/master/docker-lab/startup.sh | sh`{{execute}}

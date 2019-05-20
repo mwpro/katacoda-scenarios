@@ -5,8 +5,8 @@
   "details": {
     "steps": [
       {
-        "title": "Create minimal ASP.NET Api",
-        "text": "step1-simple-app.md"
+        "title": "Prepare environment",
+        "text": "step1.md"
       },
       {
         "title": "Step 2",
