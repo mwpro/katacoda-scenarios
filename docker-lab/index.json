@@ -3,20 +3,6 @@
   "description": "",
 
   "details": {
-    "assets": {
-      "client": [
-        {
-          "file": "dotnet-api.csproj",
-          "target": "~/"
-        }
-      ],
-      "host01": [
-        {
-          "file": "Program.cs",
-          "target": "~/"
-        }
-      ]
-    },
     "steps": [
       {
         "title": "Create minimal ASP.NET Api",
