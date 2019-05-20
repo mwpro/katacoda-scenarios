@@ -1,7 +1,7 @@
 # Create minimal ASP.NET API
 
 <pre class="file" data-filename="dotnet-api.csproj" data-target="replace">
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<!--<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
@@ -14,7 +14,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
 
-</Project>
+</Project>-->
 </pre>
 
 <pre class="file" data-filename="Program.cs" data-target="replace">
