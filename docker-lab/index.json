@@ -1,11 +1,26 @@
 {
   "title": "Docker intro",
   "description": "",
+
   "details": {
+    "assets": {
+      "client": [
+        {
+          "file": "dotnet-api.csproj",
+          "target": "~/"
+        }
+      ],
+      "host01": [
+        {
+          "file": "Program.cs",
+          "target": "~/"
+        }
+      ]
+    },
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Create minimal ASP.NET Api",
+        "text": "step1-simple-app.md"
       },
       {
         "title": "Step 2",
@@ -17,7 +32,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "startup.sh"
     },
     "finish": {
       "text": "finish.md"
@@ -27,6 +43,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "dotnet"
+    "imageid": "docker"
   }
 }
