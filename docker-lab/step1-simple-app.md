@@ -1,2 +1,1 @@
-# Create minimal ASP.NET API
-
+Prepare environment `./startup.sh`{{execute}}
