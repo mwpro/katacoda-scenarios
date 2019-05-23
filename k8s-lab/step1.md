@@ -22,7 +22,7 @@ Go to https://www.katacoda.com/courses/kubernetes/playground
 
 ```kubectl get nodes```{{execute}}
 
-```kubectl describe node node01```{{execute}}
+```kubectl describe node master```{{execute}}
 
 ```kubectl get pods```{{execute}}
 
@@ -46,7 +46,7 @@ https://github.com/mwpro/k8s-lab/blob/master/01.pod.yaml
 
 ```ip=$(kubectl describe pod lab-api | grep IP | awk '{print $2}')```{{execute}}
 
-```curl $ip```
+```curl $ip```{{execute}}
 
 ## Assign vars to pod
 
@@ -60,7 +60,7 @@ https://github.com/mwpro/k8s-lab/blob/master/02.pod-env.yaml#L11-L13
 
 ```ip=$(kubectl describe pod lab-api | grep IP | awk '{print $2}')```{{execute}}
 
-```curl $ip```
+```curl $ip```{{execute}}
 
 ## First deployment
 
@@ -100,6 +100,10 @@ https://github.com/mwpro/k8s-lab/blob/master/04.service.yaml
 
 ```watch -n 1 curl $ip```{{execute}}
 
+```kubectl edit deployment lab-api && watch -n 1 curl $ip```{{execute}}
+
+```status.podIP```
+
 ## Ingress
 
 https://github.com/mwpro/k8s-lab/blob/master/05.ingress.yaml
@@ -133,5 +137,7 @@ https://github.com/mwpro/k8s-lab/blob/master/06.deployment-2.yaml
 https://github.com/mwpro/k8s-lab/blob/master/07.ingress-routing.yaml#L12-L19
 
 ```kubectl apply -f 07.ingress-routing.yaml```{{execute}}
+
+```curl --resolve lab.foo:80:$ingressIp lab.foo```{{execute}}
 
 ```curl --resolve lab.foo:80:$ingressIp lab.foo/api```{{execute}}
