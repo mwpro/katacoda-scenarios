@@ -1,1 +1,0 @@
-Let's run `curl https://raw.githubusercontent.com/mwpro/katacoda-scenarios/master/docker-lab/startup.sh | sh`{{execute}}
